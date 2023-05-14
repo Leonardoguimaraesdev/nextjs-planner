@@ -1,0 +1,33 @@
+.cardNotesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    height: 160px;
+}
+
+.notes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(144, 99, 247);
+    width: 100%;
+    height: 15%;
+    border-radius: 10px;
+}
+
+.spaceToWrite {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    border: 3px solid rgb(144, 99, 247);
+    padding: 10px;
+    
+    textarea {
+        flex:1;
+        background-color: #b9d4db;
+        border: none;
+    }
+}

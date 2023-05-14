@@ -1,0 +1,17 @@
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    button {
+        padding: 5px 20px;
+    }
+
+    h4 {
+        color: #9f2aff;
+        font-weight: 200;
+        font-size: 0.8rem;
+        margin-top: 5px;
+    }
+}
