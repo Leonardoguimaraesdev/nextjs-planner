@@ -4,8 +4,8 @@ import styles from '../../styles/Register.module.scss'
 
 export default function Register() {
     return (
-        <div className={styles.register}>
+        <main className={styles.register}>
             <FormRegister />
-        </div>
+        </main>
     )
 }

@@ -70,9 +70,9 @@ export default function Body(props: BodyProps) {
     }
 
     return (
-        <div className={styles.body}>
+        <section className={styles.body}>
             {renderizarTasks()}
             <CardNotes/>
-        </div>
+        </section>
     )
 }

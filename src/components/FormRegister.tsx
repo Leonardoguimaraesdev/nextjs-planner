@@ -25,6 +25,7 @@ type FormData = {
 };
 
 export default function Input() {
+    
     const router = useRouter()
 
     const [name, setName] = useState<string>('')
@@ -39,6 +40,7 @@ export default function Input() {
     });
 
     const onSubmit = (data: FormData) => {
+
         if (password !== confirmPassword) {
             const dif = <p>As senhas precisam ser iguais</p>
             setCheckPassword(dif)
@@ -51,7 +53,7 @@ export default function Input() {
     };
 
     return (
-        <div className={styles.form}>
+        <section className={styles.form}>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <h1 className={styles.registerTittle}>Cadastrar</h1>
                 <input
@@ -90,6 +92,6 @@ export default function Input() {
                     </Link>
                 </h4>
             </form>
-        </div>
+        </section>
     )
 }

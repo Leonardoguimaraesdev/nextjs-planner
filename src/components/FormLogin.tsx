@@ -14,6 +14,7 @@ export default function Input() {
     const [checkEmailExist, setCheckEmailExist] = useState<any>('')
 
     const handleSubmit = (event: any) => {
+        
         event.preventDefault();
 
         const cookie = Cookies.get('email')
@@ -27,7 +28,7 @@ export default function Input() {
     };
 
     return (
-        <div className={styles.form}>
+        <section className={styles.form}>
             <form onSubmit={handleSubmit}>
                 <h1 className={styles.loginTittle}>Login</h1>
                 {checkEmailExist}
@@ -55,6 +56,6 @@ export default function Input() {
                 </h4>
 
             </form>
-        </div >
+        </section >
     )
 }

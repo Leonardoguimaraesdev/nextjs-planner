@@ -17,8 +17,8 @@ export default function Home() {
     })
 
     return (
-        <div className={styles.dashboard}>
+        <main className={styles.dashboard}>
             <Planner />
-        </div>
+        </main>
     )
 }

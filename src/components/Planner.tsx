@@ -20,9 +20,9 @@ export default function Input() {
     }
 
     return (
-        <div className={styles.planner}>
+        <section className={styles.planner}>
             <Head addNewTask={addNewTask}/>
             <Body newTask={newTask} addInWeek={addInWeek}/>
-        </div>
+        </section>
     )
 }

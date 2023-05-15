@@ -6,11 +6,11 @@ export default function CardNotes() {
     const [note, setNote] = useState('')
 
     return (
-        <div className={styles.cardNotesContainer}>
-            <div className={styles.notes}>Notes</div>
-            <div className={styles.spaceToWrite}>
+        <section className={styles.cardNotesContainer}>
+            <section className={styles.notes}><p>Notes</p></section>
+            <section className={styles.spaceToWrite}>
                 <textarea placeholder='Escreva aqui observações' value={note} onChange={(e) => setNote(e.target.value)}></textarea>
-            </div>
-        </div>
+            </section>
+        </section>
     )
 }

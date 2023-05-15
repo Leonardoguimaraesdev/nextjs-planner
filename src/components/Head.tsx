@@ -21,7 +21,7 @@ export default function Head(props: HeadProps) {
 
     console.log(inputWeek)
     return (
-        <div className={styles.head}>
+        <header className={styles.head}>
             <h1>Planner Semanal</h1>
             <Logout />
             <input maxLength={35} placeholder='Tarefa' value={inputTask} onChange={(e) => setInputTask(e.target.value)}></input>
@@ -36,6 +36,6 @@ export default function Head(props: HeadProps) {
                 <option value="Domingo">Domingo</option>
             </select>
             <button onClick={() => sendToPlanner()}>Enviar</button>
-        </div>
+        </header>
     )
 }

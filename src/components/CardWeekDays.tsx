@@ -10,12 +10,13 @@ export default function CardWeekDays(props: CardWeekDaysProps) {
 
 
     const renderizarTasks = () => {
+        
         const tasks = props.tasks
 
         return tasks.map((task, i) => {
             return (
                 <div className={styles.task} key={i}>
-                    <h2>{task}</h2>
+                    <li>{task}</li>
                     <button onClick={() => props.removeTask(props.day, i)}>X</button>
                 </div>
             )
@@ -23,11 +24,11 @@ export default function CardWeekDays(props: CardWeekDaysProps) {
     }
 
     return (
-        <div className={styles.cardWeekDays}>
-            <h1>{props.day}</h1>
-            <div className={styles.toDoList}>
+        <section className={styles.cardWeekDays}>
+            <h2>{props.day}</h2>
+            <ul className={styles.toDoList}>
                 {renderizarTasks()}
-            </div>
-        </div>
+            </ul>
+        </section>
     )
 }

@@ -12,9 +12,9 @@
     border-radius: 20px;
     padding: 10px;
 
-    h1 {
+    h2 {
         position: absolute;
-        top: -26px;
+        top: -20px;
         background-color: #b9d4db;
         font-family: 'Caveat';
     }
@@ -35,7 +35,6 @@
             background-color: #0000;
         }
     
-
         .task {
             display: flex;
 
@@ -51,7 +50,6 @@
                 cursor: pointer;
             }
         }
-
 
     }
 }
