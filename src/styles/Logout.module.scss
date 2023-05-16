@@ -1,21 +1,13 @@
-.btnLogout {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20px;
-    width: 40px;
-    border: none;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
+.exit {
+    width: 20px;
+    height: 25px;
     cursor: pointer;
-    font-size: 0.5rem;
-    font-weight: 700;
 
     &:hover {
         background-color: red;
+        border-radius: 5px;
         transform: scale(1.1);
         color: white;
-        
-    }
 
+    }
 }

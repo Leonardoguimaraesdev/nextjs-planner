@@ -1,38 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 .head {
-    position: relative;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: flex-end;
-    height: 12%;
+    height: 70px;
     width: 95%;
     border-bottom: 15px solid rgb(144, 99, 247);
 
     h1 {
         position: absolute;
-        top: -5px;
-        left: 20px;
+        top: -22px;
+        left: 16%;
         font-family: 'Caveat';
-        font-size: 5rem;
+        font-size: 1.8rem;
         font-weight: 400;
+        background-color: #b9d4db;
+
+        @media screen and (min-width: 300px) {
+            left: 22%;
+        }
+
+        @media screen and (min-width: 400px) {
+            left: 26%;
+        }
+
+        @media screen and (min-width: 500px) {
+            left: 30%;
+        }
+
+        @media screen and (min-width: 600px) {
+            left: 34%;
+        }
+
+        @media screen and (min-width: 700px) {
+            left: 38%;
+        }
+
+        @media screen and (min-width: 800px) {
+            left: 39%;
+        }
+
+        @media screen and (min-width: 1100px) {
+            left: 42%;
+        }
+
+        @media screen and (min-width: 1300px) {
+            left: 44%;
+        }
+
     }
 
-    input {
-        margin:5px;
-        padding: 5px;
-        background-color: #b9d4db;
-    }
-    select {
-        margin:5px;
-        padding: 5px;
-        background-color: #b9d4db;
+    .headLeft {
+
+
+        select {
+            margin: 5px;
+            background-color: #b9d4db;
+            width: 22%;
+            height: 22px;
+            font-size: 0.6rem;
+
+            @media screen and (min-width: 700px) {
+                width: 150px;
+            }
+        }
+
+        input {
+            margin: 5px;
+            padding: 5px;
+            background-color: #b9d4db;
+            width: 22%;
+            height: 22px;
+            font-size: 0.6rem;
+
+            @media screen and (min-width: 700px) {
+                width: 150px;
+            }
+        }
+
+        button {
+            margin: 5px;
+            background-color: #b9d4db;
+            width: 50px;
+            height: 22px;
+            font-size: 0.6rem;
+            cursor: pointer;
+        }
     }
 
-    button {
-        margin:5px;
-        padding: 5px;
-        background-color: #b9d4db;
-        cursor: pointer;
+    .headRight{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 100%;
     }
+
 }

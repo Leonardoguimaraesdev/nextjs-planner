@@ -11,7 +11,11 @@
     h4 {
         color: #9f2aff;
         font-weight: 200;
-        font-size: 0.8rem;
+        font-size: 0.5rem;
         margin-top: 5px;
+
+        @media screen and (min-width: 600px) {
+            font-size: 0.8rem;
+        }
     }
 }

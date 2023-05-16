@@ -1,36 +1,75 @@
 .form {
     position: relative;
     display: flex;
-    padding: 50px;
+    padding: 30px;
     border: 3px solid #9f2aff;
     border-radius: 20px;
+    width: 90%;
+
+    @media screen and (min-width: 600px) {
+        width: 400px;
+    }
+
 
     form {
         display: flex;
         flex-direction: column;
+        height: auto;
+        width: 100%;
 
-        .registerTittle{ 
-            top:-17px;
-            right: 200px;
+
+        .registerTittle {
+            top: -17px;
+            right: 29%;
             position: absolute;
             background-color: #fff;
+            @media screen and (min-width: 300px) {
+                right: 31%;
+            }
+            @media screen and (min-width: 400px) {
+                right: 34%;
+            }
+            @media screen and (min-width: 500px) {
+                right: 38%;
+            }
+            @media screen and (min-width: 600px) {
+                right: 37%;
+            }
+
 
         }
-        .loginTittle{ 
-            top:-17px;
-            right: 225px;
+
+        .loginTittle {
+            top: -8%;
+            right: 38%;
             position: absolute;
             background-color: #fff;
+            font-size: 1.5rem;
+
+            @media screen and (min-width: 300px) {
+                right: 40%;
+            }
+            @media screen and (min-width: 400px) {
+                right: 42%;
+            }
+            @media screen and (min-width: 500px) {
+                right: 44%;
+            }
+            @media screen and (min-width: 600px) {
+                right: 42.5%;
+            }
+
 
         }
 
         input {
             margin-bottom: 10px;
-            height: 30px;
-            width: 400px;
+            height: auto;
+            width: 100%;
             border: 1px solid #9f2aff;
             border-radius: 5px;
             padding: 10px;
+
         }
 
         button {
@@ -42,14 +81,14 @@
             &:hover {
                 background-color: #9f2aff;
                 transform: scale(1.03);
-                color:#fff;
+                color: #fff;
             }
 
         }
 
         p {
             font-size: 0.8rem;
-            color:red;
+            color: red;
         }
     }
 }
