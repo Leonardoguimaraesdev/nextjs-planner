@@ -47,7 +47,7 @@ export default function Input() {
         } else {
             Cookies.set('name', name)
             Cookies.set('email', email)
-            router.push('/login')
+            router.push('/')
 
         }
     };
@@ -87,7 +87,7 @@ export default function Input() {
                 <button type="submit">Cadastrar</button>
                 <h4>
                     Caso já tenha uma conta
-                    <Link href="/login">
+                    <Link href="/">
                         <b> Clique Aqui</b>
                     </Link>
                 </h4>

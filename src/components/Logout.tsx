@@ -1,7 +1,6 @@
 import styles from '../styles/Logout.module.scss'
 import Cookies from 'js-cookie';
 import { useRouter } from 'next/router'
-import { useEffect } from 'react';
 
 export default function Input() {
 
@@ -11,7 +10,7 @@ export default function Input() {
         Cookies.remove('email')
         Cookies.remove('name')
 
-        router.push('/login')
+        router.push('/')
     }
 
     return (

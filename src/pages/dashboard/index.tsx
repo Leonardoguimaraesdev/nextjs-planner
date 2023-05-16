@@ -12,7 +12,7 @@ export default function Home() {
         const cookie = Cookies.get('email')
 
         if (!cookie) {
-            router.push('/login')
+            router.push('/')
         }
     })
 
