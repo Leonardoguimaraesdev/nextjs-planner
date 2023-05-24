@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     width: 95%;
     height: 88%;
-    overflow-y: scroll;
+    overflow-y: auto;
 
     /* Define o tamanho e a cor de fundo da barra de rolagem */
     &::-webkit-scrollbar {
@@ -29,6 +29,5 @@
 
     @media screen and (min-width: 1410px) {
         left: 44%;
-        overflow-y: unset;
     }
 }
